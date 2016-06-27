@@ -201,11 +201,30 @@ Shell aliases and scripts:
 * `v` for `$VISUAL`.
 * 
 
-Copy and paste to Clipboard:
+Copy and paste to Clipboard
+------
 
 * install xclip: `sudo apt-get install xclip`
 * install vim-gnome: `sudo apt-get install vim-gnome`
 * config .tmux.conf
+* 
+
+Database For Rails:
+------
+
+Install Mysql:
+
+* `sudo apt-get install mysql-server mysql-client libmysqlclient-dev`
+
+Install PostgreSQL:
+
+* `sudo apt-get install postgresql postgresql-contrib libpq-dev`
+* 
+
+Deployment instruction for Rails App:
+------
+
+* [GoRails.com](https://gorails.com/deploy/ubuntu/14.04)
 
 Thanks
 ------
