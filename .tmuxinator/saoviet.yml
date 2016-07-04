@@ -1,0 +1,8 @@
+name: phongvesaoviet
+root: /home/harry/Workspace/chipchip_solutions/phongvesaoviet
+windows:
+  - Editor: 
+      layout: b256,204x42,0,0[204x30,0,0,0,204x11,0,31,4]
+      panes: 
+        - vim .
+        - clear

@@ -1,0 +1,8 @@
+name: chat
+root: /home/harry/Workspace/git_hub/rails_5/realtime_chat_demo
+windows:
+  - Editor: 
+      layout: b256,204x42,0,0[204x30,0,0,0,204x11,0,31,4]
+      panes: 
+        - vim .
+        - clear
