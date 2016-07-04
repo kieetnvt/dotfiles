@@ -1,10 +1,12 @@
-thoughtbot dotfiles
+Dotfiles - Vim Editor
 ===================
-
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
 
 Requirements
 ------------
+
+Install ZSH and install Oh-my-Zsh [instruction](https://github.com/robbyrussell/oh-my-zsh)
+
+    sudo apt-get install zsh
 
 Set zsh as your login shell:
 
@@ -15,15 +17,9 @@ Install
 
 Clone onto your laptop:
 
-    git clone git://github.com/thoughtbot/dotfiles.git
-
-(Or, [fork and keep your fork
-updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
+    git clone git://github.com/tuankiet/vim.git
 
 Install [rcm](https://github.com/thoughtbot/rcm):
-
-    brew tap thoughtbot/formulae
-    brew install rcm
 
 Install the dotfiles:
 
@@ -203,6 +199,32 @@ Shell aliases and scripts:
 * `replace foo bar **/*.rb` to find and replace within a given list of files.
 * `tat` to attach to tmux session named the same as the current directory.
 * `v` for `$VISUAL`.
+* 
+
+Copy and paste to Clipboard
+------
+
+* install xclip: `sudo apt-get install xclip`
+* install vim-gnome: `sudo apt-get install vim-gnome`
+* config .tmux.conf
+* 
+
+Database For Rails:
+------
+
+Install Mysql:
+
+* `sudo apt-get install mysql-server mysql-client libmysqlclient-dev`
+
+Install PostgreSQL:
+
+* `sudo apt-get install postgresql postgresql-contrib libpq-dev`
+* 
+
+Deployment instruction for Rails App:
+------
+
+* [GoRails.com](https://gorails.com/deploy/ubuntu/14.04)
 
 Thanks
 ------
