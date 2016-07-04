@@ -1,0 +1,100 @@
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP> noremap   <Right>  <NOP>
+
+" Default VIM
+highlight LineNr ctermfg=white
+highlight Visual ctermfg=blue ctermbg=white
+set relativenumber
+syntax on
+set hlsearch
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+set nu
+set cc=80
+set hlsearch
+set relativenumber
+set background=dark
+set t_Co=256
+filetype on
+filetype plugin on
+filetype indent on
+filetype plugin indent on
+syntax enable
+syntax on
+set laststatus=2
+set nocompatible
+set hidden
+set showtabline=1
+
+map <Leader>d <ESC>obinding.pry<ESC>
+map <Leader>dv <ESC>o<% binding.pry %><ESC>
+map <Leader>dV <ESC>o= binding.pry<ESC>
+map <Leader>w :w<CR>
+map <Leader>q :q<CR>
+map <Leader>fq :q!<CR>
+map <Leader>nt :NERDTree<CR>
+map <Leader>t :NERDTreeToggle<CR>
+map <Leader>vi :e ~/.vimrc<CR>
+map <Leader>sv :source ~/.vimrc<CR>
+map <Leader>bi :PlugInstall<CR>
+
+" ERB
+map <Leader>- <ESC>i<%  %><ESC>
+map <Leader>+ <ESC>i<%=  %><ESC>
+map <Leader># <ESC>i<%#  %><ESC>
+" Rails
+map <Leader>g :e Gemfile<CR>
+map <Leader>ac :e app/controllers/application_controller.rb<CR>
+map <Leader>ah :e app/helpers/application_helper.rb<CR>
+map <Leader>aj :e app/assets/javascripts/application.js<CR>
+map <Leader>as :e app/assets/stylesheets/application.css<CR>
+map <Leader>rt :e config/routes.rb<CR>
+map <Leader>db :e config/database.yml<CR>
+map <Leader>sc :e db/schema.rb<CR>
+map <Leader><Leader> <C-^>
+map <Leader>n <C-w>v<C-h><SPACE><SPACE>
+map <Leader>fu :%s/<C-v><C-m>//<CR>
+map <Leader>ct :!ctags -R<CR>
+map <C-c> "+y<CR>
+map <Leader>v "+p<CR>
+map <Leader>ag :Ag<SPACE>
+map <Leader>vc :Vcontroller<SPACE>
+map <Leader>vv :Vview<SPACE>
+map <Leader>vm :Vmodel<SPACE>
+map <Leader>sc :sp db/schema.rb<CR>
+map <Leader>bb :!bundle install<CR>
+map <Leader>c :Rcontroller<SPACE>
+
+" Git
+map <Leader>co :Gread<CR>
+map <Leader>ga :Gwrite<CR>
+map <Leader>gac :Gcommit -am ""<LEFT>
+map <Leader>gb :Gblame<CR>
+map <Leader>gc :Gcommit -m ""<LEFT>
+map <Leader>gd :Gvdiff<CR>
+map <Leader>gm :Gmove<SPACE>
+map <Leader>gr :Gremove<CR>
+map <Leader>gs :Gstatus<CR>
+
+" Trailing WhiteSpace
+map <Leader>sp :%s/\s\+$//e<CR>
+map <Leader>nh :nohlsearch<CR>
+map <Leader>hl :set hlsearch<CR>
+
