@@ -44,5 +44,4 @@ _load_settings "$HOME/.zsh/configs"
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-echo 'hi kiet!'
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
