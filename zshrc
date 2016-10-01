@@ -1,3 +1,4 @@
+plugins=(git)
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
@@ -44,4 +45,6 @@ _load_settings "$HOME/.zsh/configs"
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# swap caplocks key with escape key
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'

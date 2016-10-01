@@ -106,6 +106,13 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+
+nnoremap <silent> <Leader>ts :call TrimWhiteSpace()<CR>
+
 " vim-test mappings
 " nnoremap <silent> <Leader>t :TestFile<CR>
 " nnoremap <silent> <Leader>s :TestNearest<CR>
@@ -150,7 +157,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':p:.'
 let g:airline#extensions#tabline#buffer_nr_show = 1
-
+" Indent
+let g:indentLine_color_term = 239
+let g:indentLine_enabled = 1
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
